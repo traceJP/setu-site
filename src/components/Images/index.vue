@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import globalQuery from "@/api/apiEntry"
+
 export default {
   name: "index",
   data: () => ({
@@ -32,9 +34,12 @@ export default {
   }),
   methods: {
     changeImages() {
-      console.log("success！！！！")
+      this.responseData = globalQuery("lolicon")
     },
   },
+  created() {
+    this.changeImages()
+  }
 }
 </script>
 
