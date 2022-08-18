@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
-    <index></index>
-  </div>
+  <v-app id="app">
+    <v-main>
+      <index></index>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
